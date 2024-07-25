@@ -1,45 +1,4 @@
-
-![nexever logo](https://nexever.com/images/logo2.png)
-
-
-A set of extension methods for performing common validations on strings in Dart applications.
-
-## Features
-
-### Name Validations
-
-- **Name Length**: Validates the length of a name string based on provided parameters (`min`, `max`).
-- **Empty Check**: Ensures the name is not empty.
-- **Character Validation**: Checks if the name contains only valid characters.
-
-### Email Validations
-
-- **Empty Check**: Ensures the email address is not empty.
-- **Format Validation**: Verifies if the email address follows a valid format.
-
-### Phone Number Validations
-
-- **Empty Check**: Ensures the phone number is not empty.
-- **Length Validation**: Validates the length of the phone number within specified limits (`min`, `max`).
-
-### Password Validations
-
-- **Empty Check**: Ensures the password is not empty.
-- **Length Validation**: Validates the length of the password within specified limits (`min`, `max`).
-
-## Installation
-
-Add `nex_validations_extensions` to your `pubspec.yaml`:
-
-```yaml
-dependencies:
-  nex_validations_extensions: <latest-version>
-```
-
-## Usage
-
-```dart
-import 'package:nex_validations_extensions/nex_validations_extensions.dart';
+import 'package:nex_validation/nex_validation.dart';
 
 void main() {
   String name = "John Doe";
@@ -50,7 +9,6 @@ void main() {
   // Example of using name validations
   String nameError = name.nameValidations(
     min: 3,
-    max: 20,
     emptyMsg: 'Name cannot be empty',
     lengthMsg: 'Name must be between 3 and 20 characters',
     validMsg: 'Name contains invalid characters',
@@ -83,5 +41,3 @@ void main() {
   print('Phone Number Validation Error: $phoneError');
   print('Password Validation Error: $passwordError');
 }
-```
-# nex_validation
