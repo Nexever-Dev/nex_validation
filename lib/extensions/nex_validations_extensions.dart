@@ -1,5 +1,3 @@
-
-
 import '../fuctions/nex_validations_functions.dart';
 
 extension NexValidationsExtensions on String {

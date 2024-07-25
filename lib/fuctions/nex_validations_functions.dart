@@ -1,5 +1,3 @@
-
-
 class NexValidationsFunctions {
   /// Checks if the provided [data] is empty.
   ///
@@ -124,4 +122,3 @@ class NexValidationsFunctions {
     return false;
   }
 }
-
